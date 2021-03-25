@@ -6,11 +6,19 @@
 
 # 部署
 
+## 部署图
+
 ![](./readme_images/部署图.jpg)
 
-- 日志系统
+## 日志系统
 
 ![](./readme_images/日志系统.png)
+
+## 报警邮件
+
+![](./readme_images/报警邮件.png)
+
+---
 
 # 分层设计
 
