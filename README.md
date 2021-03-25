@@ -8,6 +8,10 @@
 
 ![](./readme_images/部署图.jpg)
 
+- 日志系统
+
+![](./readme_images/日志系统.png)
+
 # 分层设计
 
 - 中间件层：
