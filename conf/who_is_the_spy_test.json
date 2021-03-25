@@ -1,0 +1,134 @@
+{
+  "env": "test",
+  "gateway_list": [
+    "POST:/user/wx_login",
+    "POST:/user/update_userInfo",
+    "POST:/room/new_room",
+    "POST:/room/enter_room",
+    "POST:/room/exit_room",
+    "POST:/room/refresh_room",
+    "POST:/game/ready_game",
+    "POST:/game/start_game",
+    "POST:/game/end_game",
+    "POST:/game/restart_game"
+  ],
+  "salt": "something",
+  "user_config": {
+    "wx_login_url": "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code",
+    "app_id": "something",
+    "app_secret": "something"
+  },
+  "gateway_redis": {
+    "host": "127.0.0.1",
+    "port": something,
+    "password": "something",
+    "db": 0
+  },
+  "user_mysql": {
+    "host": "127.0.0.1",
+    "port": something,
+    "database": "something",
+    "settings": "charset=utf8mb4&parseTime=True&loc=Local",
+    "username": "something",
+    "password": "something"
+  },
+  "user_redis": {
+    "host": "127.0.0.1",
+    "port": something,
+    "password": "something",
+    "db": 0
+  },
+  "word_mysql": {
+    "host": "127.0.0.1",
+    "port": something,
+    "database": "something",
+    "settings": "charset=utf8mb4&parseTime=True&loc=Local",
+    "username": "something",
+    "password": "something"
+  },
+  "room_redis": {
+    "host": "127.0.0.1",
+    "port": something,
+    "password": "something",
+    "db": 0
+  },
+  "limiter_config": {
+    "service_name": "lmf.mortal.spy",
+    "default_pass": true,
+    "global_on": false,
+    "global_limiter_type": "simple",
+    "local_limiter_type": "token",
+    "method_qps_limit": {
+      "POST:/user/wx_login": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/user/update_userInfo": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/room/new_room": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/room/enter_room": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/room/exit_room": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/room/refresh_room": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/game/ready_game": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/game/start_game": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/game/end_game": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      },
+      "POST:/game/restart_game": {
+        "step": 0,
+        "global_qps": 0,
+        "local_qps": 50
+      }
+    }
+  },
+  "log_config": {
+    "env": "prod",
+    "log_dir": "logs",
+    "log_file_name": "access.log",
+    "log_server_ip": "something",
+    "log_server_port": 12201,
+    "mail_bot": {
+      "name": "NaNaSe On Call (Test)",
+      "smtp_server_ip": "smtp.qq.com",
+      "smtp_server_port": 587,
+      "from_mail_address": "something@qq.com",
+      "to_mail_address_list": [
+        "something@qq.com",
+        "something@qq.com"
+      ],
+      "username": "something@qq.com",
+      "password": "something",
+      "enable": false
+    }
+  }
+}

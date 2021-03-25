@@ -1,0 +1,4 @@
+<!--pages/print_form/print_form.wxml-->
+<text>pages/print_form/print_form.wxml</text>
+<web-view style="width:100rpx" src='http://www.nk-hoper.cn/UploadDemoWeb/upload.html'></web-view>
+<!--https://blog.csdn.net/qq_35713752/article/details/80639328-->

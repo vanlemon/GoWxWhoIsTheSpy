@@ -1,0 +1,50 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Others
+*.idea/
+*cmake-build-debug/
+*cmake-build*/
+*/venv/
+*target/
+
+**/nohup.out
+*.log
+*/.DS_Store
+
+###########
+*bin/
+*build/
+*output/
+*log/
+*outer**/
+*output**/

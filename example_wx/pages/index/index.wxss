@@ -1,0 +1,29 @@
+/**index.wxss**/
+@import '../../static/style/thorui.wxss';
+
+.container {
+  padding: 20rpx 30rpx 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.tui-btn, .tui-mbtm {
+  margin-bottom: 26rpx;
+  margin-right: 20rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height:  128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
